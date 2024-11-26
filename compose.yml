@@ -1,0 +1,10 @@
+services:
+  quake3:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./baseq3:/root/ioquake3/baseq3
+      - ./missionpack:/root/ioquake3/missionpack
+    ports:
+      - "27960:27960"

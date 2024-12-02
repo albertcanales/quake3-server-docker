@@ -1,10 +1,11 @@
 services:
   quake3:
     build: .
+    command: +exec server.cfg
     stdin_open: true
     tty: true
     volumes:
-      - ./baseq3:/root/ioquake3/baseq3
-      - ./missionpack:/root/ioquake3/missionpack
+      - ./pak0.pk3:/home/quake/ioquake3/baseq3/pak0.pk3
+      - ./server.cfg:/home/quake/ioquake3/baseq3/server.cfg
     ports:
-      - "27960:27960"
+      - "27960:27960/udp"

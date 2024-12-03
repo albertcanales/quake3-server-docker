@@ -7,5 +7,6 @@ services:
     volumes:
       - ./pak0.pk3:/home/quake/ioquake3/baseq3/pak0.pk3
       - ./server.cfg:/home/quake/ioquake3/baseq3/server.cfg
+      - ./instagib:/home/quake/ioquake3/instagib
     ports:
       - "27960:27960/udp"

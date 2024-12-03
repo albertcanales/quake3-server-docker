@@ -1,3 +1,5 @@
 *.pk3
 q3config.cfg
 *.log
+
+!instagib.pk3

@@ -2,15 +2,15 @@
 
 A pre-configured Quake III Arena Server built with Docker, with some nice additions:
 
-- Built-in support for Instagib mod. See [here](#run-mods).
-- Many useful resources to tweak your server. See [here](#resources).
+- Built-in support for Instagib mod. See [here](#run-mods-and-other-games-like-instagib).
+- Many useful resources to tweak your server. See [here](#references-and-useful-links).
 
-This server is based on the [ioquake3 engine](https://ioquake3.org/). You can find more information on the installation process [here](https://ioquake3.org/help/sys-admin-guide/)
+This server is based on the [ioquake3 engine](https://ioquake3.org/). You can find more information on the installation process [here](https://ioquake3.org/help/sys-admin-guide/).
 
 
 ## Installation
 
-> In order to use this project, you must read an agree on the EULA by *id Software*, which you can find [here](https://ioquake3.org/extras/patch-data/)
+> In order to use this project, you must read an agree on the EULA by *id Software*, which you can find [here](https://ioquake3.org/extras/patch-data/).
 
 To run the server, you just need to:
 
@@ -49,19 +49,19 @@ To leave the server's console, you have to press `Ctrl+P` followed by `Ctrl+Q`.
 
 ### Change current map
 
-Use this command [in the console](#entering-the-console):
+Use this command [in the console](#entering-the-servers-console):
 
 	map NAME
 
-You have some map names [here](#maps).
+You have some map names in the `server.cfg` file, and many more in [here](#maps).
 
-To go back to the default map cycle, use this command [in the console](#entering-the-console):
+To go back to the default map cycle, use this command [in the console](#entering-the-servers-console):
 
 	vstr d1
 
-### Run mods and other games (like Instagib!) {#run-mods}
+### Run mods and other games (like Instagib!)
 
-This project comes with the Instagib mod. To play this game instead of FFA, use this commands [in the console](#entering-the-console):
+This project comes with the Instagib mod. To play this game instead of FFA, use this commands [in the console](#entering-the-servers-console):
 
 	game_restart instagib
 	exec server.cfg
@@ -72,14 +72,14 @@ If you know of some nice mods, drop a PR!
 
 ### Changing the server configuration
 
-You can tweak the server to your liking by modifying the `server.cfg` file. You may find some useful resources [here](#server-configuration)
+You can tweak the server to your liking by modifying the `server.cfg` file. You may find some useful resources [here](#server-configuration).
 
 ### Stopping the server
 
 	docker compose down
 
 
-## References and useful links {#resources}
+## References and useful links
 
 Here you have some useful links to tweak the server to your liking.
 

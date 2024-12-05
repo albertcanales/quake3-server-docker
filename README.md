@@ -18,13 +18,17 @@ To run the server, you just need to:
 
 1. Clone the repository:
 
-	git clone github.com/albertcanales/quake3-server-docker quake3
+```sh
+git clone github.com/albertcanales/quake3-server-docker quake3
+```
 
 2. **Copy the `pak0.pk3` file from your purchased copy of Quake 3 into the newly created `quake3` directory.**
 
 3. Run the server:
 
-	cd quake3 && docker compose up -d
+```sh
+cd quake3 && docker compose up -d
+```
 
 Done! The server will be running at `localhost:27960`.
 
@@ -37,11 +41,15 @@ Are you ready to fight?
 
 ### View server's logs
 
-	docker compose logs
+```sh
+docker compose logs
+```
 
 ### Entering the server's console
 
-	docker compose attach quake3
+```sh
+docker compose attach quake3
+```
 
 All the subsequent commands will be sent to the server's console.
 
@@ -76,7 +84,9 @@ You can tweak the server to your liking by modifying the `server.cfg` file. You 
 
 ### Stopping the server
 
-	docker compose down
+```sh
+docker compose down
+```
 
 
 ## References and useful links
